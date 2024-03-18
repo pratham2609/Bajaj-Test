@@ -48,3 +48,6 @@ const response = async (req, res) => {
     }
 }
 app.post("/bfhl", response);
+app.get("/bfhl",(req,res)=>{    
+    res.send("Please use POST method with postman and enter array of strings in the body.")
+})
